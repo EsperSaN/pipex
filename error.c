@@ -44,11 +44,9 @@ void	put_error(char *str, int errornum, t_p *var)
 
 void	put_errorcmd(char *str, char *cmd_p, char **cmd_a, int errnum)
 {
-	int	i;
 	int	ecode;
 
 	ecode = 1;
-	i = 0;
 	putstr_fd("pipex42: ", 2);
 	err_cmd(&ecode, errnum, str);
 	putstr_fd(": ", 2);
